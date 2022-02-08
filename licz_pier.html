@@ -1,0 +1,28 @@
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET="utf-8">
+<style>
+p {font-family: Arial; font-size: 18pt;}
+p#pierp {font-family: Arial; font-size: 35pt; text-align: center;}
+p#drugp {font-family: Arial; font-size: 35pt; text-align: center;}
+p#trzep {font-family: Arial; font-size: 18pt; text-align: center;}
+h1 {font-family: Tahoma;}
+ol {font-family: Arial;}
+ul {font-family: Arial;}
+h3 {font-family: Arial;}
+h5 {font-family: Arial;}
+</style>
+<body>
+<h1>1. Znaleziona liczba pierwsza dla liczby 1000+10*100+15 </h1> 
+<p id=pierp>101117</p>
+
+<h1>2. Definicja liczby pierwszej</h1>
+<p>Liczba pierwsza to liczba naturalna n>1, dla ktorej istnieja tylko dwa dzielniki naturalne: 1 i n.</p>
+
+<h1>3. Najwieksza znaleziona liczba pierwsza</h1>
+<p id=drugp>2<sup>82589933</sup>-1</p>
+
+<h1>4. Opis algorytmu do znajdowania liczb pierwszych</h1>
+<p id=trzep>Sprawdzamy czy kolejne liczby naturalne od 2 do pierwiastek(n) sa podzielnikami liczby n. Sprawdzenie podzielnosci odbywa sie poprzez uzycie funkcji % (MOD->reszta z dzielenia), jesli reszta z dzielenia jest zero to oznacza to, ze liczba n jest podzielna przez liczbe mniejsza od n i n nie jest liczba pierwsza. Nalezy zauwazyc, ze nie jest konieczne sprawdzanie kolejnych liczb naturalnych do 2 do n a wystarczy do pierwiastek(n). Zmienna k ma wartosc domyslnie zero. Po zakonczeniu programu sprawdzamy wartosc zmiennej k, jesli jest rowna zero oznacza to, ze liczba n jest pierwsza, jesli nie (czyli jeden) to liczba nie jest pierwsza. Zmiana k zmieniana jest na wartosc jeden gdy liczba n jest podzielna przez kolejna liczbe naturalna mniejsza od pierwiastka(n).</p>
+</body>
+</html>
