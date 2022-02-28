@@ -1,0 +1,49 @@
+<textarea rows=52 cols=80>
+#include <cstdlib>
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ cout<<"podaj liczbe do sprawdzenia- ";
+ int pierwsza_jun;
+ int suma_jun;
+ int k=0;
+ cin>>pierwsza_jun;
+ cout<<"podaj druga liczbe do sprawdzenia- ";
+ int druga_jun;
+ int n=0;
+ cin>>druga_jun;
+ for(int i=2;i<=sqrt(pierwsza_jun);++i)
+ for(int i=2;i<=sqrt(druga_jun);++i)
+ {
+if ((pierwsza_jun) % i==0)
+if ((druga_jun) % i==0)
+{
+k=1;
+n=1;
+cout<<"liczba "<<pierwsza_jun<<" to nie jest liczba pierwsza jest podzielna przez "<<i<<", "<<druga_jun<<"tez nie jest pierwsza jest podzielna przez "<<i<<"\n";
+ }
+ }
+ {
+ if ( k==0);
+ if ( n==0);
+ suma_jun=(pierwsza_jun+druga_jun);
+ if (suma_jun%2==0)
+ {
+ cout<<"liczba "<<pierwsza_jun<<" to jest liczba pierwsza, "<<druga_jun<<" tez jest liczba pierwsza, ich suma wynosi "<<suma_jun<<", jest parzysta"<<"\n";
+}
+}
+{
+if ( k==0);
+if ( n==0);
+suma_jun=(pierwsza_jun+druga_jun);
+if (suma_jun%2==1)
+ {
+cout<<"liczba "<<pierwsza_jun<<" to jest liczba pierwsza, "<<druga_jun<<" tez jest liczba pierwsza, ich suma wynosi "<<suma_jun<<", jest nieparzysta"<<"\n";
+}
+}
+ system("PAUSE");
+ return EXIT_SUCCESS;
+}
+</textarea>

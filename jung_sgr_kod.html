@@ -1,0 +1,25 @@
+<textarea rows=24 cols=60>
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+system("chcp 1250");
+int gora_jun;
+cout<<"podaj górną granicę obliczania sumy=";
+cin>>gora_jun;
+int dol_jun;
+cout<<"podaj dolną granicę obliczania sumy=";
+cin>>dol_jun;
+int suma_jun=0;
+for(int dzialanie=gora_jun;dzialanie<=dol_jun;dzialanie++)
+{
+suma_jun+=dzialanie;
+}
+cout<<"suma="<<suma_jun<<endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+</textarea>

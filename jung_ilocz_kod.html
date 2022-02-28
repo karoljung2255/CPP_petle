@@ -1,0 +1,23 @@
+<textarea rows=27 cols=60>
+#include <iostream>
+using namespace std; 
+int main()
+//Oblicz iloczyn liczb od liczby dolnej do liczby górnej ( wczytanych z klawiatury).
+//Wskazówka zmienną suma ( poprzednie zadanie) zastąp zmienną np. iloczyn_kow i nadaj jej wartość jeden
+{
+int iloczyn_kar=1;
+int gora_kar;
+cout<<"Podaj gorna granice obliczania iloczynu"<<endl;
+cin >> gora_kar;
+int dol_kar;
+cout<<"Podaj dolna granice obliczania iloczynu"<<endl;
+cin >> dol_kar;
+for(int i = gora_kar; i <= dol_kar; i++)
+iloczyn_kar*= i;
+cout<<iloczyn_kar;
+system("PAUSE");
+ return EXIT_SUCCESS; 
+        ;
+}
+
+</textarea>
